@@ -8,8 +8,8 @@ public class FuncionarioTerceirizado extends Funcionario {
 	@Override
 	public Double pagamento() {
 		
-		Double bonus = custosAdicionais * 1.1;	
-		return horas * valorPorHora + bonus;
+		
+		return super.pagamento() + custosAdicionais * 1.1;
 		
 	}
 	
